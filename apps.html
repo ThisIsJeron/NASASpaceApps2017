@@ -3,6 +3,8 @@
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <body>
 
 <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="leftMenu">
@@ -13,7 +15,14 @@
     <form method="post" action="/action_page_post.php">
       <label for="points">How many sleeping pods?</label>
         <br>
-      <input type="range" name="points" id="points" value="50" min="0" max="100">
+      <input type="range" min="0" max="50" value="0" step="5" onchange="showValue(this.value)" />
+        <span id="range">0</span>
+        <script type="text/javascript">
+        function showValue(newValue)
+        {
+            document.getElementById("range").innerHTML=newValue;
+        }
+        </script>
     </form>
   </div>
         
@@ -21,7 +30,14 @@
     <form method="post" action="/action_page_post.php">
       <label for="points">How many sleeping pods?</label>
         <br>
-      <input type="range" name="points" id="points" value="50" min="0" max="100">
+        <input type="range" min="0" max="50" value="0" step="5" onchange="showValue(this.value)" />
+        <span id="range">0</span>
+        <script type="text/javascript">
+        function showValue(newValue)
+        {
+            document.getElementById("range").innerHTML=newValue;
+        }
+        </script>
     </form>
   </div>
     <br><p>Some Selection 1</p>
