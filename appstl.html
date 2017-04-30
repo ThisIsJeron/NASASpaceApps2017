@@ -31,21 +31,27 @@ function closeRightMenu() {
         <p><b>CAD Toolbox</b></p>
         <p>Floors:
         <select>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
+          <option>1</option>
+          <option>2</option>
+          <option selected="selected">3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
         </select>
         </p>
         
         <br>
+        <input type="button" onclick="location.href='app1.html';" value="Floor 1" />
+        <br><br>
+        <input type="button" onclick="location.href='app2.html';" value="Floor 2" />
+        <br><br>
+        <input type="button" onclick="location.href='app3.html';" value="Floor 3" />
+        <br><br>
         
-        <button type="floor1">Floor 1</button>
-        <br><br>
-        <button type="floor2">Floor 2</button>
-        <br><br>
-        <button type="floor3">Floor 3</button>
-        <br><br>
+        Upload new design: <br>&emsp;&emsp;&emsp;&emsp;&emsp;<input name="userfile" type="file" />
         
+        <br><br>
+        <input type="button" onclick="location.href='app4.html';" value="Submit" />
         
     </center>  
 </div>
@@ -54,17 +60,21 @@ function closeRightMenu() {
       <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
       
     <center>
-        <p>Astronaut Movement<br>
-Pressure<br>
-Electricity<br>
-Water<br>
-Food<br>
-Air<br>
-Temperature<br>
-Radiation Protection<br>
-Waste Removal<br>
-Gravity<br>
-Storage</p>
+      <table>
+        <label><span style="font-weight:bold">Astronaut</span></label><br>
+          <tr>Health: <span style="color:green">Optimal</span></tr><br>
+          <tr>Happiness: Acceptable</tr><br><br>
+        <label><span style="font-weight:bold">Mission</span></label><br>
+          <tr>Productivity: Acceptable</tr><br><br>
+        <label><span style="font-weight:bold">Resource Consumption</span></label><br>
+          <tr>Water: Acceptable</tr><br>
+          <tr>Oxygen: Acceptable</tr><br>
+          <tr>Food: Acceptable</tr><br>
+          <tr>Electricity: <span style="color:green">Optimal</span></tr><br><br>
+        <label><span style="font-weight:bold">Resource Generation</span></label><br>
+          <tr>Oxygen: Acceptable</tr><br>
+          <tr>Water Reclam.: Acceptable</tr><br>
+      </table>
     </center>  
 </div>
 
@@ -72,7 +82,7 @@ Storage</p>
   <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
   <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
   <div class="w3-container">
-    <h1>CAD Preview Display Toolbox</h1>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CAD Preview Display Toolbox</h1>
   </div>
 </div>
 
