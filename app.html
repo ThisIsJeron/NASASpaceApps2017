@@ -36,6 +36,10 @@
     </Center>
     
 </div>
+    
+<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-right" style="display:none;right:0;" id="rightMenu">
+  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+</div>
 
 <div zclass="w3-main" id="main">
 
@@ -254,7 +258,7 @@
                 scene = new THREE.Scene();
 
                 camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
-                camera.position.z = 1500;
+                camera.position.z = 2000;
                 scene.add( camera );
 
                 var directionalLight = new THREE.DirectionalLight( 0xffffff );
